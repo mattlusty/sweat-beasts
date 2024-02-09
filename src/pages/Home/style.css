@@ -1,0 +1,11 @@
+#jumbotron {
+  font-family: Inter, system-ui, Roboto, Avenir, Helvetica, Arial, sans-serif;
+  background-image: linear-gradient(#fafafa00, #000000dc), url("/images/workout.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
