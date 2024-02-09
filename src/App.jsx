@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-       <Navbar /> 
+      <Navbar /> 
       <Routes>
         <Route exact path="/" element={<Home />} />
         {/* <Route exact path="/cardio" element={<Cardio />} /> */}
