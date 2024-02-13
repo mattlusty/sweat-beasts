@@ -8,8 +8,8 @@ const Home = ({ updateWorkouts }) => {
       <Jumbotron />;
       <div className="container">
         <div className="row row-cols-1 row-cols-md-2 g-4">
-          <div className="col">
-            <WorkoutTypeCard name="Cardio" onClick={() => updateWorkouts({ type: "cardio" })} />
+          <div className="col" onClick={() => updateWorkouts({ type: "cardio" })}>
+            <WorkoutTypeCard name="Cardio" />
           </div>
         </div>
         <div className="col">
