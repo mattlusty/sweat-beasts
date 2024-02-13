@@ -6,14 +6,14 @@ const Home = ({ updateWorkouts }) => {
   return (
     <>
       <Jumbotron />;
-      <div className="container">
-        <div className="row row-cols-1 row-cols-md-2 g-4">
-          <div className="col" onClick={() => updateWorkouts({ type: "cardio" })}>
-            <WorkoutTypeCard name="Cardio" />
+      <div className="container-fluid ml-50 row row-cols-2 row-cols-md-2 g-5 d-flex justify-content-center">
+        <div className="workCard ">
+          <div className="col h-100" onClick={() => updateWorkouts({ type: "cardio" })}>
+            <WorkoutTypeCard name="Cardio" image="cardio.jpg" />
           </div>
         </div>
-        <div className="col">
-          <WorkoutTypeCard name="Weights" updateWorkouts={updateWorkouts} />
+        <div className=" workCard ">
+          <WorkoutTypeCard name="Weights" image="weights.webp" updateWorkouts={updateWorkouts} />
         </div>
       </div>
     </>
