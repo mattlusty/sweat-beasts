@@ -7,9 +7,15 @@ const Home = () => {
     <>
       <Jumbotron />;
       <div className="container">
-        <WorkoutTypeCard name ="Cardio"/>
-        <WorkoutTypeCard name="Weights" />
-      </div>  
+        <div className="row row-cols-1 row-cols-md-2 g-4">
+          <div className="col">
+            <WorkoutTypeCard name="Cardio" />
+          </div>
+        </div>
+        <div className="col">
+          <WorkoutTypeCard name="Weights" />
+        </div>
+      </div>
     </>
   );
 };
