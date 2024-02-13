@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./style.css";
 import api from "../../utils/api";
 import MuscleCard from "../../components/MuscleCard";
@@ -24,12 +25,14 @@ const images = [
 
 const Muscles = ({ type, muscle }) => {
   const [workouts, setWorkouts] = useState([]);
+  const navigate = useNavigate();
 
   const handleMuscleSelect = (image) => {
     console.log(image);
     const updateWorkouts = async () => {
       let workouts = await api.getExercises({ type: "strength", muscle });
       setWorkouts(workouts);
+      navigate("/workouts");
     };
     updateWorkouts();
   };
