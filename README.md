@@ -62,7 +62,7 @@ JAVASCRIPT
 ```
 
 ```shell
-jQuery
+REACT
 ```
 
 ```shell
@@ -71,11 +71,6 @@ Bootstrap
 
 ```shell
 Netlify
-```
-
-```shell
-Microsoft
-Powerpoint
 ```
 
 #### Clone the repository
