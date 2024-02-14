@@ -15,6 +15,7 @@ function App() {
 
   const updateWorkouts = async (query) => {
     console.log("updateWorkouts Started!");
+    console.log(query);
     let workouts = await api.getExercises(query);
     setWorkouts(workouts);
     navigate("/workouts");
@@ -27,7 +28,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home updateWorkouts={updateWorkouts} />} />
         <Route exact path="/weights" element={<Muscles updateWorkouts={updateWorkouts} />} />
-        <Route exact path="/workouts" element={<Workouts />} />
+        <Route exact path="/workouts" element={<Workouts workouts={workouts} />} />
         {/* <Route exact path="/contacts" element={<Contacts />} /> */}
       </Routes>
     </>

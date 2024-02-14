@@ -3,17 +3,7 @@ import api from "../../utils/api";
 import "./style.css";
 import WorkoutCard from "../../components/WorkoutCard";
 
-const Workouts = ({ type, muscle }) => {
-  const [workouts, setWorkouts] = useState([]);
-
-  useEffect(() => {
-    const updateWorkouts = async () => {
-      let workouts = await api.getExercises({ type: "cardio" });
-      setWorkouts(workouts);
-    };
-    updateWorkouts();
-  }, []);
-
+const Workouts = ({ workouts }) => {
   return (
     <div id="workouts" className="container-fluid">
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
