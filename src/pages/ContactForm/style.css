@@ -1,10 +1,20 @@
 .contact {
   text-align: center;
-  max-width: 300px;
+  max-width: 450px;
   margin: 20px auto;
 }
-Form {
+.contact-form {
+  height: 500px;
   border: 1px solid lightgray;
   border-radius: 10px;
-  padding: 20px;
+  padding: 50px;
+}
+
+#form-input-control-email,
+#form-input-control-last-name {
+  height: 60px;
+}
+
+#form-textarea-control-opinion {
+  height: 160px;
 }
