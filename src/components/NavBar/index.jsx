@@ -20,10 +20,16 @@ function NavBar({ updateWorkouts }) {
   return (
     <nav id="NavBar" className="container-fluid  fs-4 fw-bold navbar navbar-expand-lg">
       <a className="navbar-brand text-light" href="#">
-        <img src={hulk} alt="Sweat-Beasts" width="50" height="50"></img> Sweat-Beasts{" "}
+        <img
+          src={hulk}
+          alt="Sweat-Beasts"
+          width="50"
+          height="50"
+        />{" "}
+        FitTECH{" "}
       </a>
       <button
-        className="navbar-toggler"
+        className="navbar-toggler text-bg-light "
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
