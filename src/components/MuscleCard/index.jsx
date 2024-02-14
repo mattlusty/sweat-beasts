@@ -1,11 +1,15 @@
 import "./style.css";
 
-const MuscleCard = ({ image }) => {
+const MuscleCard = ({ muscle }) => {
   return (
     <div id="MuscleCard" className="card">
-      <img src={"./public/images/muscles/" + image[1]} className="card-img-top" alt={image[0]} />
+      <img
+        src={"./public/images/muscles/" + muscle.image}
+        className="card-img-top"
+        alt={muscle.name}
+      />
       <div className="card-body">
-        <p className="card-text">{image[0]}</p>
+        <p className="card-text">{muscle.name}</p>
       </div>
     </div>
   );
