@@ -44,7 +44,7 @@ function App() {
         />
         <Route exact path="/contact" element={<ContactForm />} />
       </Routes>
-      <Footer />
+      <Footer updateWorkouts={updateWorkouts} />
     </>
   );
 }
