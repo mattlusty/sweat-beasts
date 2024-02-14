@@ -14,12 +14,12 @@ const cardioImages = [
   "cardio/tread-f2.webp",
 ];
 
-function NavBar({updateWorkouts}) {
+function NavBar({ updateWorkouts }) {
   return (
     <nav id="NavBar" className="container-fluid  fs-4 fw-bold navbar navbar-expand-lg">
       <a className="navbar-brand text-light" href="#">
         <img
-          src="./src/components/NavBar/image/HulkBeasts.jpg"
+          src="/src/components/NavBar/image/HulkBeasts.jpg"
           alt="Sweat-Beasts"
           width="50"
           height="50"
@@ -45,7 +45,11 @@ function NavBar({updateWorkouts}) {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active text-light" onClick={() => updateWorkouts({ type: "cardio" }, cardioImages)} aria-current="page">
+            <Link
+              className="nav-link active text-light"
+              onClick={() => updateWorkouts({ type: "cardio" }, cardioImages)}
+              aria-current="page"
+            >
               Cardio
             </Link>
           </li>
