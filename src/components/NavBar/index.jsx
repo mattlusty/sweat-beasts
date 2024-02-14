@@ -1,16 +1,26 @@
 import "./style.css";
+import { Link } from "react-router-dom";
 
-function NavBar() {
+import hulk from "./image/HulkBeasts.jpg";
+
+const cardioImages = [
+  "cardio/bike.webp",
+  "cardio/dumbell-f.jpeg",
+  "cardio/push.webp",
+  "cardio/pushup-f.webp ",
+  "cardio/ropes.jpeg ",
+  "cardio/run.jpeg ",
+  "cardio/situp-f.webp ",
+  "cardio/swim.jpeg ",
+  "cardio/tread-f.jpeg ",
+  "cardio/tread-f2.webp",
+];
+
+function NavBar({ updateWorkouts }) {
   return (
-    <nav id="NavBar" className="container-fluid navbar navbar-expand-lg">
-      <a className="navbar-brand" href="#">
-        <img
-          src="./src/components/NavBar/image/HulkBeasts.jpg"
-          alt="Sweat-Beasts"
-          width="50"
-          height="50"
-        ></img>{" "}
-        Sweat-Beasts{" "}
+    <nav id="NavBar" className="container-fluid  fs-4 fw-bold navbar navbar-expand-lg">
+      <a className="navbar-brand text-light" href="#">
+        <img src={hulk} alt="Sweat-Beasts" width="50" height="50"></img> Sweat-Beasts{" "}
       </a>
       <button
         className="navbar-toggler"
@@ -24,26 +34,30 @@ function NavBar() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav ">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">
+            <Link className="nav-link active text-light" to="/" aria-current="page">
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link " href="#">
+            <Link
+              className="nav-link active text-light"
+              onClick={() => updateWorkouts({ type: "cardio" }, cardioImages)}
+              aria-current="page"
+            >
               Cardio
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link className="nav-link active text-light" to="/weights" aria-current="page">
               Weights
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link " href="#">
+            <Link className="nav-link active text-light" to="/contact" aria-current="page">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

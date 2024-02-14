@@ -1,9 +1,8 @@
-import "./style.css";
 
+import "./style.css";
 const Workout = ({ workout }) => {
   return (
     <div id="Workout" className="container">
-      {/* <div className="d-flex gap-5 workout-container"> */}
       <h1 className="workout-name">{workout.name}</h1>
 
       <h3 className="workout-difficulty">
@@ -15,7 +14,6 @@ const Workout = ({ workout }) => {
       <div>
         <p className="workout-instructions">{workout.instructions}</p>
       </div>
-      {/* </div> */}
     </div>
   );
 };
