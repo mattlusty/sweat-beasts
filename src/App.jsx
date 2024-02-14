@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import api from "./utils/api";
-import Navbar from "./components/NavBar";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Muscles from "./pages/Muscles";
@@ -28,7 +28,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <NavBar updateWorkouts={updateWorkouts}/>
       <div id="main" className="p-3 px-md-5">
         <Routes>
           <Route exact path="/" element={<Home updateWorkouts={updateWorkouts} />} />
