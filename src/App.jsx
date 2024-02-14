@@ -25,12 +25,14 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Home updateWorkouts={updateWorkouts} />} />
-        <Route exact path="/weights" element={<Muscles updateWorkouts={updateWorkouts} />} />
-        <Route exact path="/workouts" element={<Workouts workouts={workouts} />} />
-        {/* <Route exact path="/contacts" element={<Contacts />} /> */}
-      </Routes>
+      <div id="main" className="p-3 px-md-5">
+        <Routes>
+          <Route exact path="/" element={<Home updateWorkouts={updateWorkouts} />} />
+          <Route exact path="/weights" element={<Muscles updateWorkouts={updateWorkouts} />} />
+          <Route exact path="/workouts" element={<Workouts workouts={workouts} />} />
+          {/* <Route exact path="/contacts" element={<Contacts />} /> */}
+        </Routes>
+      </div>
     </>
   );
 }
