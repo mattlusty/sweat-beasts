@@ -24,7 +24,7 @@ function NavBar({updateWorkouts}) {
           width="50"
           height="50"
         ></img>{" "}
-        Sweat-Beasts{" "}
+        FitTECH{" "}
       </a>
       <button
         className="navbar-toggler text-bg-light "
