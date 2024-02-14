@@ -2,7 +2,20 @@ import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 
-function Footer() {
+const cardioImages = [
+  "cardio/bike.webp",
+  "cardio/dumbell-f.jpeg",
+  "cardio/push.webp",
+  "cardio/pushup-f.webp ",
+  "cardio/ropes.jpeg ",
+  "cardio/run.jpeg ",
+  "cardio/situp-f.webp ",
+  "cardio/swim.jpeg ",
+  "cardio/tread-f.jpeg ",
+  "cardio/tread-f2.webp",
+];
+
+function Footer({ updateWorkouts }) {
   return (
     <section className="section-7" id="contactt">
       <div className="container text-center footer-container">
@@ -22,7 +35,11 @@ function Footer() {
           <span className="extraDecoration">-</span>
 
           <span className="nav_item_footer">
-            <Link className="item_footer" to="/workouts" aria-label="Contact">
+            <Link
+              className="item_footer"
+              onClick={() => updateWorkouts({ type: "cardio" }, cardioImages)}
+              aria-label="Contact"
+            >
               Cardio
             </Link>
           </span>
