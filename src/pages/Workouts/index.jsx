@@ -9,7 +9,7 @@ const Workouts = ({ workouts }) => {
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
         {workouts.map((w, i) => (
           <div key={i} className="col py-3">
-            <WorkoutCard name={w.name} />
+            <WorkoutCard name={w.name} image={w.image} />
           </div>
         ))}
       </div>
