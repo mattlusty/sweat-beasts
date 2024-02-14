@@ -5,7 +5,6 @@ import Navbar from "./components/NavBar";
 import Home from "./pages/Home";
 import Muscles from "./pages/Muscles";
 import Workouts from "./pages/Workouts";
-
 // import Footer from './components/Footer';
 import "./App.css";
 
@@ -13,10 +12,13 @@ function App() {
   const [workouts, setWorkouts] = useState();
   const navigate = useNavigate();
 
-  const updateWorkouts = async (query) => {
+  const updateWorkouts = async (query, images) => {
     console.log("updateWorkouts Started!");
     console.log(query);
     let workouts = await api.getExercises(query);
+    workouts.forEach((w, index) => {
+      w.image = images[index];
+    });
     setWorkouts(workouts);
     navigate("/workouts");
     console.log("updateWorkouts Finished!");

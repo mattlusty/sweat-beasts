@@ -23,22 +23,22 @@ const muscles = [
   { name: "triceps", image: "triceps.jpeg" },
 ];
 
+const weightsImages = [
+  "weights/beast.webp",
+  "weights/pose-f.jpeg",
+  "weights/biceps.webp",
+  "weights/curls-f.jpeg",
+  "weights/curls.webp",
+  "weights/dumbells.jpeg",
+  "weights/flex-f.jpeg",
+  "weights/hench-f.webp",
+  "weights/press.jpeg",
+  "weights/squat-f.jpeg",
+];
+
 const Muscles = ({ updateWorkouts }) => {
-  // const [workouts, setWorkouts] = useState([]);
-  // const navigate = useNavigate();
-
-  // const handleMuscleSelect = (image) => {
-  //   console.log(image);
-  //   const updateWorkouts = async () => {
-  //     let workouts = await api.getExercises({ type: "strength", muscle });
-  //     setWorkouts(workouts);
-  //     navigate("/workouts");
-  //   };
-  //   updateWorkouts();
-  // };
-
   const onMuscleSelect = (name) => {
-    updateWorkouts({ type: "strength", muscle: name });
+    updateWorkouts({ type: "strength", muscle: name }, weightsImages);
   };
 
   return (
