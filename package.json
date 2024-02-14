@@ -10,13 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@popperjs/core": "^2.11.8",
     "@react-google-maps/api": "^2.19.2",
     "axios": "^1.6.7",
     "bootstrap": "^5.3.2",
+    "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.5",
+    "sweetalert2": "^11.10.5",
     "use-places-autocomplete": "^4.0.1"
   },
   "devDependencies": {

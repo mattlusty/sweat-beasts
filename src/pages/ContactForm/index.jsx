@@ -32,7 +32,7 @@ const ContactForm = () => {
   };
   return (
     <div className="contact">
-      <Form onSubmit={handleOnSubmit}>
+      <Form onSubmit={handleOnSubmit} className="contact-form">
         <Form.Field
           id="form-input-control-email"
           control={Input}

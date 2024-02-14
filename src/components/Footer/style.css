@@ -1,0 +1,71 @@
+#contactt {
+  height: 300px;
+  background-image: url("../assets/world-logo.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #242424;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav_item_footer .item_footer {
+  color: #cd5c5c;
+  letter-spacing: 0.5px;
+  padding: 10px;
+}
+
+.nav_item_footer a:hover {
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.nav_item_footer {
+  font-size: 1.8rem;
+}
+
+.extraDecoration {
+  color: #cd5c5c;
+  font-size: 2rem;
+}
+
+#copyRights span {
+  color: #cd5c5c;
+  font-size: 1rem;
+}
+
+#footer-socials i {
+  color: #cd5c5c;
+  font-size: 2.2rem;
+  padding: 15px;
+  transition: all 0.6s ease-in-out;
+}
+
+#footer-socials i:hover {
+  transform: rotate(360deg);
+}
+
+.ruby-footer {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+
+.footer-font-white {
+  color: #cd5c5c;
+  font-size: 1.5rem;
+}
+
+.footer-divider {
+  margin-bottom: 5px;
+  border-radius: 3px;
+  height: 2px;
+  background-color: #cd5c5c;
+}

@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import api from "./utils/api";
 import Navbar from "./components/NavBar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Muscles from "./pages/Muscles";
 import Workouts from "./pages/Workouts";
+import ContactForm from "./pages/ContactForm";
 
-// import Footer from './components/Footer';
 import "./App.css";
 
 function App() {
@@ -26,11 +27,24 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home updateWorkouts={updateWorkouts} />} />
-        <Route exact path="/weights" element={<Muscles updateWorkouts={updateWorkouts} />} />
-        <Route exact path="/workouts" element={<Workouts workouts={workouts} />} />
-        {/* <Route exact path="/contacts" element={<Contacts />} /> */}
+        <Route
+          exact
+          path="/"
+          element={<Home updateWorkouts={updateWorkouts} />}
+        />
+        <Route
+          exact
+          path="/weights"
+          element={<Muscles updateWorkouts={updateWorkouts} />}
+        />
+        <Route
+          exact
+          path="/workouts"
+          element={<Workouts workouts={workouts} />}
+        />
+        <Route exact path="/contact" element={<ContactForm />} />
       </Routes>
+      <Footer />
     </>
   );
 }
