@@ -1,6 +1,8 @@
 import "./style.css";
 import { Link } from "react-router-dom";
 
+import hulk from "./image/HulkBeasts.jpg";
+
 const cardioImages = [
   "cardio/bike.webp",
   "cardio/dumbell-f.jpeg",
@@ -18,13 +20,7 @@ function NavBar({ updateWorkouts }) {
   return (
     <nav id="NavBar" className="container-fluid  fs-4 fw-bold navbar navbar-expand-lg">
       <a className="navbar-brand text-light" href="#">
-        <img
-          src="/src/components/NavBar/image/HulkBeasts.jpg"
-          alt="Sweat-Beasts"
-          width="50"
-          height="50"
-        ></img>{" "}
-        Sweat-Beasts{" "}
+        <img src={hulk} alt="Sweat-Beasts" width="50" height="50"></img> Sweat-Beasts{" "}
       </a>
       <button
         className="navbar-toggler"
