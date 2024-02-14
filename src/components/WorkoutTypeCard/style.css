@@ -1,3 +1,4 @@
-#workCard{
-    justify-content: end;
+#WorkoutTypeCard img {
+  height: 300px;
+  object-fit: cover;
 }
