@@ -11,6 +11,7 @@ const getExercises = ({ name = "", type = "", muscle = "", difficulty = "" }) =>
     contentType: "application/json",
   }).then((response) => {
     console.log("response recieved!");
+    console.log(response.data);
     return response.data;
   });
 };
