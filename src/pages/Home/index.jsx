@@ -1,4 +1,5 @@
 import "./style.css";
+import { Link } from "react-router-dom";
 import Jumbotron from "../../components/Jumbotron";
 import WorkoutTypeCard from "../../components/WorkoutTypeCard";
 
@@ -13,7 +14,9 @@ const Home = ({ updateWorkouts }) => {
           </div>
         </div>
         <div className=" workCard ">
-          <WorkoutTypeCard name="Weights" image="weights.webp" updateWorkouts={updateWorkouts} />
+          <Link to="/weights">
+            <WorkoutTypeCard name="Weights" image="weights.webp" updateWorkouts={updateWorkouts} />
+          </Link>
         </div>
       </div>
     </>
