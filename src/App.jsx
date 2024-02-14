@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Muscles from "./pages/Muscles";
 import Workouts from "./pages/Workouts";
-import Workout from ".pages/Workout";
+import Workout from "./pages/Workout";
 import ContactForm from "./pages/ContactForm";
 
 import "./App.css";

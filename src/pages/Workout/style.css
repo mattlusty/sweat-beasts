@@ -1,4 +1,29 @@
-#WorkoutCard img {
+/* #WorkoutCard img {
   height: 300px;
   object-fit: cover;
+} */
+
+.workout-image {
+  width: 450px;
+  height: 450px;
+}
+
+.workout-container {
+  padding: 40px;
+}
+.workout-name {
+  width: 200px;
+  height: 300px;
+}
+
+.workout-instructions {
+  font-style: italic;
+}
+
+.workout-name {
+  color: #cd5c5c;
+}
+
+.workout-difficulty {
+  /* text-decoration: underline; */
 }
