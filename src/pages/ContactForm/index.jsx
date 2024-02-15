@@ -31,40 +31,42 @@ const ContactForm = () => {
     e.target.reset();
   };
   return (
-    <div className="contact">
-      <Form onSubmit={handleOnSubmit} className="contact-form">
-        <Form.Field
-          id="form-input-control-email"
-          control={Input}
-          label="Email"
-          email="user_email"
-          placeholder="Email…"
-          required
-          icon="mail"
-          iconPosition="left"
-        />
-        <Form.Field
-          id="form-input-control-last-name"
-          control={Input}
-          label="Name"
-          name="user_name"
-          placeholder="Name…"
-          required
-          icon="user circle"
-          iconPosition="left"
-        />
-        <Form.Field
-          id="form-textarea-control-opinion"
-          control={TextArea}
-          label="Message"
-          message="user_message"
-          placeholder="Message…"
-          required
-        />
-        <Button type="submit" color="green">
-          Submit
-        </Button>
-      </Form>
+    <div className="contact-container">
+      <div className="contact p-5">
+        <Form onSubmit={handleOnSubmit} className="contact-form">
+          <Form.Field
+            id="form-input-control-email"
+            control={Input}
+            label="Email"
+            email="user_email"
+            placeholder="Email…"
+            required
+            icon="mail"
+            iconPosition="left"
+          />
+          <Form.Field
+            id="form-input-control-last-name"
+            control={Input}
+            label="Name"
+            name="user_name"
+            placeholder="Name…"
+            required
+            icon="user circle"
+            iconPosition="left"
+          />
+          <Form.Field
+            id="form-textarea-control-opinion"
+            control={TextArea}
+            label="Message"
+            message="user_message"
+            placeholder="Message…"
+            required
+          />
+          <Button type="submit" color="green">
+            Submit
+          </Button>
+        </Form>
+      </div>
     </div>
   );
 };
