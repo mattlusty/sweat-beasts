@@ -1,10 +1,12 @@
 <br />
+<p align="center">
+<img width="232" alt="Screenshot 2024-02-15 at 04 11 45" src="https://github.com/rshaarma/rsdev-portfolio/assets/64362564/2f057ac8-2741-44e4-89a9-1ac3ff02b08a">
 
   <h3 align="center">Welcome to Fitness Application</h3>
 
   <p align="center">
     <strong>Explore the docs »</strong>
-    <a href="" target="_blank">Deployed URL</a>
+    <a href="https://main--sweat-beasts.netlify.app" target="_blank">Live Demo</a>
     ·
     <a href="https://github.com/mattlusty/sweat-beasts/issues">Report Bug</a>
     ·
@@ -30,10 +32,15 @@
 
 ## About The Project
 
-The live website has been deployed to
-Github Pages. This project was developed by
-[mattlusty](https://github.com/mattlusty), [MichalLaa](https://github.com/MichalLaa), [Rohit](https://github.com/rshaarma),
-[Timiwesky](https://github.com/Timiwesky)
+<img width="1432" alt="Screenshot 2024-02-15 at 02 22 22" src="https://github.com/rshaarma/rsdev-portfolio/assets/64362564/46cc50f6-051a-441f-9169-48e5a6b8b86b">
+<img width="1313" alt="Screenshot 2024-02-15 at 02 28 49" src="https://github.com/rshaarma/rsdev-portfolio/assets/64362564/b833f758-0504-48d9-a675-d0ce713f74e3">
+<img width="1321" alt="Screenshot 2024-02-15 at 03 43 42" src="https://github.com/rshaarma/rsdev-portfolio/assets/64362564/de158193-05ae-4878-8728-7fd9d860ef87">
+<img width="1316" alt="Screenshot 2024-02-15 at 03 42 24" src="https://github.com/rshaarma/rsdev-portfolio/assets/64362564/68c0aedd-7eb4-4dc6-a09d-3d814b86b00e">
+
+This repository contains a web application created for people who want to learn more about the exercises they can do, such as exercises to improve their stamina (cardio exercises) as well as muscle development (weights exercises). Once a workout is selected, the user can see comprehensive details and step by step guidance on how to accomplish the workouts. The live website has been deployed to
+Netlify.
+This project was developed by
+[mattlusty](https://github.com/mattlusty), [Rohit](https://github.com/rshaarma), [MichalLaa](https://github.com/MichalLaa), [Timiwesky](https://github.com/Timiwesky)
 
 ## Getting Started
 
