@@ -18,7 +18,10 @@ const cardioImages = [
 
 function NavBar({ updateWorkouts }) {
   return (
-    <nav id="NavBar" className="container-fluid  fs-4 fw-bold navbar navbar-expand-lg">
+    <nav
+      id="NavBar"
+      className="container-fluid  fs-4 fw-bold navbar navbar-expand-lg"
+    >
       <a className="navbar-brand text-light" href="#">
         <img src={hulk} alt="Sweat-Beasts" width="50" height="50" /> FitTECH{" "}
       </a>
@@ -33,10 +36,17 @@ function NavBar({ updateWorkouts }) {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div
+        className="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
         <ul className="navbar-nav ">
           <li className="nav-item">
-            <Link className="nav-link active text-light" to="/" aria-current="page">
+            <Link
+              className="nav-link active text-light"
+              to="/"
+              aria-current="page"
+            >
               Home
             </Link>
           </li>
@@ -50,12 +60,29 @@ function NavBar({ updateWorkouts }) {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active text-light" to="/weights" aria-current="page">
+            <Link
+              className="nav-link active text-light"
+              to="/weights"
+              aria-current="page"
+            >
               Weights
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active text-light" to="/contact" aria-current="page">
+            <Link
+              className="nav-link active text-warning"
+              to="/map"
+              aria-current="page"
+            >
+              Gyms Near me
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              className="nav-link active text-light"
+              to="/contact"
+              aria-current="page"
+            >
               Contact
             </Link>
           </li>

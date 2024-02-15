@@ -8,7 +8,7 @@ import Muscles from "./pages/Muscles";
 import Workouts from "./pages/Workouts";
 import Workout from "./pages/Workout";
 import ContactForm from "./pages/ContactForm";
-
+import MapLocations from "./pages/MapLocations";
 import "./App.css";
 
 const placeHolderWorkout = {
@@ -45,15 +45,30 @@ function App() {
       <NavBar updateWorkouts={updateWorkouts} />
       <div id="main" className="p-3 px-md-5">
         <Routes>
-          <Route exact path="/" element={<Home updateWorkouts={updateWorkouts} />} />
-          <Route exact path="/weights" element={<Muscles updateWorkouts={updateWorkouts} />} />
+          <Route
+            exact
+            path="/"
+            element={<Home updateWorkouts={updateWorkouts} />}
+          />
+          <Route
+            exact
+            path="/weights"
+            element={<Muscles updateWorkouts={updateWorkouts} />}
+          />
           <Route
             exact
             path="/workouts"
-            element={<Workouts workouts={workouts} updateWorkout={updateWorkout} />}
+            element={
+              <Workouts workouts={workouts} updateWorkout={updateWorkout} />
+            }
           />
-          <Route exact path="/workout" element={<Workout workout={workout} />} />
+          <Route
+            exact
+            path="/workout"
+            element={<Workout workout={workout} />}
+          />
           <Route exact path="/contact" element={<ContactForm />} />
+          <Route exact path="/map" element={<MapLocations />}></Route>
         </Routes>
       </div>
       <Footer updateWorkouts={updateWorkouts} />
