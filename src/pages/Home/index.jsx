@@ -23,10 +23,14 @@ const Home = ({ updateWorkouts }) => {
 
       <div className="row row-cols-2 d-flex justify-content-center">
         <div className="col" onClick={() => updateWorkouts({ type: "cardio" }, cardioImages)}>
-          <WorkoutTypeCard name="Cardio" image="cardio.jpg" />
+          <WorkoutTypeCard name="Cardio" image="/images/workoutTypeCard/cardio.jpg" />
         </div>
         <Link to="/weights" className="col">
-          <WorkoutTypeCard name="Weights" image="weights.webp" updateWorkouts={updateWorkouts} />
+          <WorkoutTypeCard
+            name="Weights"
+            image="/images/workoutTypeCard/weights.webp"
+            updateWorkouts={updateWorkouts}
+          />
         </Link>
       </div>
     </>

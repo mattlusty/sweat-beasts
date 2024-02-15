@@ -3,15 +3,12 @@ const BASEURL = "https://api.api-ninjas.com/v1/exercises";
 const APIKEY = "JcQRG/SPOs2dnACkTAR+sA==WVKgjBnAYa8ojQd3";
 
 const getExercises = ({ name = "", type = "", muscle = "", difficulty = "" }) => {
-  console.log("api launched!");
   return axios({
     method: "GET",
     url: BASEURL + "?type=" + type + "&muscle=" + muscle + "&difficulty=" + difficulty,
     headers: { "X-Api-Key": APIKEY },
     contentType: "application/json",
   }).then((response) => {
-    console.log("response recieved!");
-    console.log(response.data);
     return response.data;
   });
 };
