@@ -4,29 +4,23 @@ import { Link } from "react-router-dom";
 import hulk from "./image/HulkBeasts.jpg";
 
 const cardioImages = [
-  "cardio/bike.webp",
-  "cardio/dumbell-f.jpeg",
-  "cardio/push.webp",
-  "cardio/pushup-f.webp ",
-  "cardio/ropes.jpeg ",
-  "cardio/run.jpeg ",
-  "cardio/situp-f.webp ",
-  "cardio/swim.jpeg ",
-  "cardio/tread-f.jpeg ",
-  "cardio/tread-f2.webp",
+  "/images/cardio/bike.webp",
+  "/images/cardio/dumbell-f.jpeg",
+  "/images/cardio/push.webp",
+  "/images/cardio/pushup-f.webp ",
+  "/images/cardio/ropes.jpeg ",
+  "/images/cardio/run.jpeg ",
+  "/images/cardio/situp-f.webp ",
+  "/images/cardio/swim.jpeg ",
+  "/images/cardio/tread-f.jpeg ",
+  "/images/cardio/tread-f2.webp",
 ];
 
 function NavBar({ updateWorkouts }) {
   return (
     <nav id="NavBar" className="container-fluid  fs-4 fw-bold navbar navbar-expand-lg">
       <a className="navbar-brand text-light" href="#">
-        <img
-          src={hulk}
-          alt="Sweat-Beasts"
-          width="50"
-          height="50"
-        />{" "}
-        FitTECH{" "}
+        <img src={hulk} alt="Sweat-Beasts" width="50" height="50" /> FitTECH{" "}
       </a>
       <button
         className="navbar-toggler text-bg-light "
