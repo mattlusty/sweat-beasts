@@ -1,13 +1,19 @@
+.contact-container {
+  background: url("/images/gym pic.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
+
 .contact {
   text-align: center;
   max-width: 450px;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 .contact-form {
   height: 500px;
-  border: 1px solid lightgray;
+  /* border: 1px solid lightgray; */
   border-radius: 10px;
-  padding: 50px;
 }
 
 #form-input-control-email,
@@ -16,5 +22,5 @@
 }
 
 #form-textarea-control-opinion {
-  height: 160px;
+  height: 200px;
 }
