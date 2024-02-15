@@ -1,29 +1,30 @@
-/* #WorkoutCard img {
-  height: 300px;
-  object-fit: cover;
-} */
-
 .workout-image {
-  width: 450px;
-  height: 450px;
-}
-
-.workout-container {
-  padding: 40px;
-}
-.workout-name {
-  width: 200px;
-  height: 300px;
+  width: 90%;
+  height: 500px;
 }
 
 .workout-instructions {
+  font-size: 1.5rem;
+  margin-top: 16px;
+}
+
+.workout-instructions p {
   font-style: italic;
 }
 
 .workout-name {
   color: #cd5c5c;
+  text-decoration: underline;
 }
 
 .workout-difficulty {
-  /* text-decoration: underline; */
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.workout-difficulty span {
+  font-size: 25px;
+}
+.workout-image-container {
+  padding-top: 20px;
 }
