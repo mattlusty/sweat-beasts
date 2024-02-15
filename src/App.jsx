@@ -8,7 +8,7 @@ import Muscles from "./pages/Muscles";
 import Workouts from "./pages/Workouts";
 import Workout from "./pages/Workout";
 import ContactForm from "./pages/ContactForm";
-
+import MapLocations from "./pages/MapLocations";
 import "./App.css";
 
 const placeHolderWorkout = {
@@ -22,26 +22,22 @@ const placeHolderWorkout = {
 function App() {
   const [workouts, setWorkouts] = useState();
   const [workout, setWorkout] = useState(placeHolderWorkout);
+
   const navigate = useNavigate();
 
   const updateWorkouts = async (query, images) => {
-    console.log("updateWorkouts Started!");
-    console.log(query);
     let workouts = await api.getExercises(query);
-    workouts.forEach((w, index) => {
+    const workoutsCopy = [...workouts];
+    workoutsCopy.forEach((w, index) => {
       w.image = images[index];
     });
-    setWorkouts(workouts);
+    setWorkouts(workoutsCopy);
     navigate("/workouts");
-    console.log("updateWorkouts Finished!");
   };
 
   const updateWorkout = (workout) => {
-    console.log("Update Workout!");
-    console.log(workout);
     setWorkout(workout);
     navigate("/workout");
-    console.log("Finished Doing Update Workout!");
   };
 
   return (
@@ -49,15 +45,30 @@ function App() {
       <NavBar updateWorkouts={updateWorkouts} />
       <div id="main" className="p-3 px-md-5">
         <Routes>
-          <Route exact path="/" element={<Home updateWorkouts={updateWorkouts} />} />
-          <Route exact path="/weights" element={<Muscles updateWorkouts={updateWorkouts} />} />
+          <Route
+            exact
+            path="/"
+            element={<Home updateWorkouts={updateWorkouts} />}
+          />
+          <Route
+            exact
+            path="/weights"
+            element={<Muscles updateWorkouts={updateWorkouts} />}
+          />
           <Route
             exact
             path="/workouts"
-            element={<Workouts workouts={workouts} updateWorkout={updateWorkout} />}
+            element={
+              <Workouts workouts={workouts} updateWorkout={updateWorkout} />
+            }
           />
-          <Route exact path="/workout" element={<Workout workout={workout} />} />
+          <Route
+            exact
+            path="/workout"
+            element={<Workout workout={workout} />}
+          />
           <Route exact path="/contact" element={<ContactForm />} />
+          <Route exact path="/map" element={<MapLocations />}></Route>
         </Routes>
       </div>
       <Footer updateWorkouts={updateWorkouts} />

@@ -1,0 +1,30 @@
+.workout-image {
+  width: 90%;
+  height: 500px;
+}
+
+.workout-instructions {
+  font-size: 1.5rem;
+  margin-top: 16px;
+}
+
+.workout-instructions p {
+  font-style: italic;
+}
+
+.workout-name {
+  color: #cd5c5c;
+  text-decoration: underline;
+}
+
+.workout-difficulty {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.workout-difficulty span {
+  font-size: 25px;
+}
+.workout-image-container {
+  padding-top: 20px;
+}
